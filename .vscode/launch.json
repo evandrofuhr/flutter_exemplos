@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "program": "lib/buttom.dart",
+            "name": "Buttom",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
             "program": "lib/icon.dart",
             "name": "Icon",
             "request": "launch",
