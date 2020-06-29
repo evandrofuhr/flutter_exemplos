@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "program": "lib/icon.dart",
+            "name": "Icon",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/text.dart",
+            "name": "Text",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/container.dart",
+            "name": "Container",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/product.dart",
+            "name": "Product",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/row.dart",
+            "name": "Row",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/column.dart",
+            "name": "Column",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/menor_app.dart",
+            "name": "Menor App",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
