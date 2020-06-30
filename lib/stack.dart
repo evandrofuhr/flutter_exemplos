@@ -27,34 +27,42 @@ class _HomePageState extends State<HomePage> {
         title: Text('Stack'),
       ),
       body: Center(
-        child: Stack(
-          children: <Widget>[
-            Container(
-              width: 150,
-              height: 180,
-              color: Colors.red,
-            ),
-            Container(
-              width: 120,
-              height: 120,
-              color: Colors.green,
-            ),
-            Container(
-              width: 80,
-              height: 80,
-              color: Colors.blue,
-            ),
-            Positioned(
-              bottom: 5,
-              child: Text(
-                'posicionado',
-                style: TextStyle(
-                  fontSize: 22,
-                  color: Colors.white,
+        child: Container(
+          width: 300,
+          height: 300,
+          color: Colors.amber,
+          child: Stack(
+            fit: StackFit.passthrough,
+            //overflow: Overflow.clip,
+            children: <Widget>[
+              Container(
+                width: 150,
+                height: 180,
+                color: Colors.red,
+              ),
+              Container(
+                width: 120,
+                height: 120,
+                color: Colors.green,
+              ),
+              Container(
+                width: 80,
+                height: 80,
+                color: Colors.blue,
+              ),
+              Positioned(
+                bottom: 5,
+                right: 5,
+                child: Text(
+                  'posicionado',
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
