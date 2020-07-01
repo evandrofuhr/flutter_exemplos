@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "program": "lib/atividade/main.dart",
+            "name": "Atividades",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
             "program": "lib/stack.dart",
             "name": "Stack",
             "request": "launch",
