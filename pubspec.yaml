@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   font_awesome_flutter: ^8.8.1
+  flip_card: ^0.4.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -48,6 +49,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/tenis.png
+     - assets/chip.png
+     - assets/mastercard.png
+     - assets/nu_logo.png
+     - assets/nfc.png
+     - assets/cirrus.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
