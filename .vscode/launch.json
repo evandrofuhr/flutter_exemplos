@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "program": "lib/dialog.dart",
+            "name": "Dialog",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/form.dart",
+            "name": "Form",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
             "program": "lib/atividade/main.dart",
             "name": "Atividade 1",
             "request": "launch",
