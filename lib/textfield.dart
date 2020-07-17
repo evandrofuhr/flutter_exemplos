@@ -63,7 +63,6 @@ class _HomePageState extends State<HomePage> {
                   return null;
                 }
               },
-              autocorrect: false,
               cursorRadius: Radius.circular(50),
               cursorWidth: 10,
               decoration: InputDecoration(
