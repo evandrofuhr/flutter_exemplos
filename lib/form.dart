@@ -21,6 +21,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final _form = GlobalKey<FormState>();
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void dispose() {
@@ -30,6 +31,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         title: Text('Form'),
         actions: <Widget>[
@@ -76,6 +78,16 @@ class _HomePageState extends State<HomePage> {
                       Scaffold.of(x).showSnackBar(
                         SnackBar(
                           content: Text('SALVOU DE BOA'),
+                          action: SnackBarAction(
+                            onPressed: () {},
+                            label: 'desfazer',
+                          ),
+                        ),
+                      );
+
+                      _scaffoldKey.currentState.showSnackBar(
+                        SnackBar(
+                          content: Text('PELA GLOBAL KEY'),
                         ),
                       );
                     }

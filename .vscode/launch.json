@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "program": "lib/list_view.dart",
+            "name": "ListView",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
             "program": "lib/dialog.dart",
             "name": "Dialog",
             "request": "launch",
