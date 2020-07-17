@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "program": "lib/grid_view_drawers.dart",
+            "name": "Grid View/ Drawer",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/pick_image.dart",
+            "name": "Image picker",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
             "program": "lib/list_view.dart",
             "name": "ListView",
             "request": "launch",
