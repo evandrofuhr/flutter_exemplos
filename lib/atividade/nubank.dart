@@ -12,22 +12,14 @@ class _NuBankPageState extends State<NuBankPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromRGBO(97, 47, 116, 1),
-      ),
       backgroundColor: Color.fromRGBO(60, 25, 79, 1),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              FlipCard(
-                direction: FlipDirection.HORIZONTAL,
-                front: NuBankFrente(),
-                back: NuBankTraseira(),
-              ),
-            ],
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Center(
+          child: FlipCard(
+            direction: FlipDirection.HORIZONTAL,
+            front: NuBankFrente(),
+            back: NuBankTraseira(),
           ),
         ),
       ),
@@ -36,22 +28,16 @@ class _NuBankPageState extends State<NuBankPage> {
 }
 
 class NuBankFrente extends StatelessWidget {
-  const NuBankFrente({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: 8.5 / 5.4,
       child: Container(
-        height: double.maxFinite,
         decoration: BoxDecoration(
           color: Color.fromRGBO(97, 47, 116, 1),
           borderRadius: BorderRadius.circular(10),
         ),
         child: Stack(
-          overflow: Overflow.clip,
           children: <Widget>[
             Positioned(
               right: 10,
@@ -92,7 +78,7 @@ class NuBankFrente extends StatelessWidget {
                     height: 130,
                   ),
                   Text(
-                    'EVANDRO FÜHR',
+                    'EDSON L M NUNES',
                     style: TextStyle(
                       color: Colors.white70,
                       fontSize: 18,
@@ -109,10 +95,6 @@ class NuBankFrente extends StatelessWidget {
 }
 
 class NuBankTraseira extends StatelessWidget {
-  const NuBankTraseira({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
@@ -124,7 +106,6 @@ class NuBankTraseira extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Stack(
-          overflow: Overflow.clip,
           children: <Widget>[
             Positioned(
               right: 0,

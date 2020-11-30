@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -12,7 +11,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       body: Container(
-        margin: EdgeInsets.only(left: 40, right: 40),
+        margin: EdgeInsets.symmetric(horizontal: 40),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -66,10 +65,11 @@ class _LoginPageState extends State<LoginPage> {
             Container(
               height: 70,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  gradient: LinearGradient(
-                    colors: [Colors.red[300], Colors.orange],
-                  )),
+                borderRadius: BorderRadius.circular(50),
+                gradient: LinearGradient(
+                  colors: [Colors.red[300], Colors.orange],
+                ),
+              ),
               child: Center(
                 child: Text(
                   'LOGIN',

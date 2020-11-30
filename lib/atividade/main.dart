@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_exemplos/atividade/nubank.dart';
+
+import 'nubank.dart';
 
 void main() => runApp(App());
 
